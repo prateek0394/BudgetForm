@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Base.master.cs" Inherits="Base" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+    <link type="text/css" href="Styles/reset.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/module.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/main.css" rel="stylesheet" />
+   
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="headerWrapper">
+        <div class="headerWrapperFix">
+            <h1 class="hidden">
+                BITS Pilani</h1>
+            <div class="logoWrapper">
+                <a href="index.aspx" class="logo">
+                    <img src="images/logo.gif" alt="BITS Pilani logo" />
+                </a>
+            </div>
+         <%--   <ul class="mainNav">
+                <li class="sel"><a href="">About Us</a></li>
+                <li class="sel"></li>
+                <li class="sel"></li>
+                <li class="sel"></li>
+                <li class="sel"></li>
+                <li class="sel"></li>
+            </ul>--%>
+            
+            <ul class="commonNav">
+                <li><a href="http://universe.bits-pilani.ac.in/">University Home</a></li>
+                <li><a href="http://universe.bits-pilani.ac.in/pilani">Pilani Campus Home</a></li>             
+                <li><a href="http://universe.bits-pilani.ac.in/pilani/SoftwareDevelopmentEduTec/Contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+   <%-- <div class="infoWrapper">
+        <div class="breadCrumbWrapper">
+            <p>
+                You are here:</p>
+            <ul class="breadCrumb">
+                <li class="home"><a href="#">Home</a></li>
+                <li>Page</li>
+            </ul>
+        </div>
+    </div>--%>
+        <%--<div class="bannerInsideWrapper bannerInsideFix">--%>
+           <div class="bannerInsideWrapper">
+        <div class="bannerInsideFix">
+            <h1>
+          BUDGET BITS PILANI
+            </h1>
+            </div>
+               </div>
+            <%--</div>--%>
+    <%--<div class="bannerInsideWrapper">
+        <div class="bannerInsideFix">
+            <h1>
+           Maintaining Faculty Web Pages
+            </h1>
+           <div class="bannerCont">
+                <img src="images/insideBanner.jpg" alt="banner" width="944" height="176" />
+                <div class="qts">
+                Maintaining Faculty Web Pages
+                </div>
+            </div>
+        </div>--%>
+    <div class="contentWrapper">
+        <div class="contentFix">
+            <div class="twoCol">
+                <div class="fontstyle">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- <div class="col2">
+                  
+                  
+                  
+                </div>-->
+            </div>
+        </div>
+    </div>
+        <uc1:Footer runat="server" ID="Footer" />   
+    </form>
+
+</body>
+</html>
